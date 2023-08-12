@@ -21,3 +21,10 @@ alternative: podman->performs same instructions as docker with no single point o
 
 3.resource constraints: if too many resources running together , it causes slow performance.
 
+Security measures:
+
+1.use distroless images with not too many packages and multistage build.
+
+2.ensure network is properly configured. if needed use custom bridge net.
+
+3.scan container images using utilities Sync.
